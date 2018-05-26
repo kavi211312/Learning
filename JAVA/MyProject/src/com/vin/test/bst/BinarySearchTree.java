@@ -47,11 +47,11 @@ public class BinarySearchTree {
 		}
 	}
 
-	public boolean delete(BinarySearchTreeNode root, int value) {
-		if (root == null) {
+	public boolean delete( int value) {
+		if (this.root == null) {
 			return false;
 		}
-		BinarySearchTreeNode current = root;
+		BinarySearchTreeNode current = this.root;
 		BinarySearchTreeNode parent = current;
 		BinarySearchTreeNode searchNode = null;
 		while (current != null) {
@@ -73,8 +73,8 @@ public class BinarySearchTree {
 		// if no child i.e leaf
 		if (searchNode.getLeft() == null && searchNode.getRight() == null) {
 
-			if (searchNode == root) {
-				root = null;
+			if (searchNode == this.root) {
+				this.root = null;
 			} else if (value < parent.getData()) {
 				parent.setLeft(null);
 			} else if (value > parent.getData()) {
@@ -83,16 +83,16 @@ public class BinarySearchTree {
 		}
 		// if one child
 		if (searchNode.getLeft() == null) {
-			if (searchNode == root) {
-				root = searchNode.getRight();
+			if (searchNode == this.root) {
+				this.root = searchNode.getRight();
 			} else if (value < parent.getData()) {
 				parent.setLeft(searchNode.getRight());
 			} else {
 				parent.setRight(searchNode.getRight());
 			}
 		} else if (searchNode.getRight() == null) {
-			if (searchNode == root) {
-				root = searchNode.getLeft();
+			if (searchNode == this.root) {
+				this.root = searchNode.getLeft();
 			}else if(value< parent.getData()){
 				parent.setLeft(searchNode.getLeft());
 			}else{
@@ -105,8 +105,8 @@ public class BinarySearchTree {
 			BinarySearchTreeNode temp = getMinimumFromRight(searchNode);
 			temp.setLeft(searchNode.getLeft());
 			temp.setRight(searchNode.getRight());
-			if( searchNode == root ){
-				root = temp;
+			if( searchNode == this.root ){
+				this.root = temp;
 			}else if( temp.getData() < parent.getData()){
 				parent.setLeft(temp);
 			}else{

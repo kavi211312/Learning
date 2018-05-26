@@ -8,6 +8,7 @@ public class BSTTest {
 		bst.insert(45);
 		bst.insert(56);
 		bst.insert(35);
+		bst.delete(25);
 	}
 
 }
