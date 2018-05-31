@@ -8,7 +8,6 @@ var people = {
         this.elem.appendChild(peopleElm);
     },
     update: function(data){
-        debugger;
         this.people = data.length;
         this.elem.querySelector('.people').innerHTML = "Number of people"+this.people;
     }
