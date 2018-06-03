@@ -1,0 +1,9 @@
+What is a promise? How can we wait till multiple promises are fullfiled?
+What is the use of strict mode? 
+Difference between == and  ===.
+Sort an array without sort function.Program or algorithm. What is it's time complexity?
+Can we make it with O(n)? Assume array has only 0 or 1's. Program or algorithm.
+What is polymorphism?
+What is binary search tree? How will impliment it?
+How do find the middle element of linked list ? Explain with approaches.
+How to copy an object in JavaScript?
