@@ -7,3 +7,7 @@ What is polymorphism?
 What is binary search tree? How will impliment it?
 How do find the middle element of linked list ? Explain with approaches.
 How to copy an object in JavaScript?
+Implement memoize in javascript ?
+Implement Promise in javascript ?
+Classical inheritence vs prototype inheritence
+
